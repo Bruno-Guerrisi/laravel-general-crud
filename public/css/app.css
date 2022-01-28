@@ -186,3 +186,7 @@ header .other_site li a {
   }
 }
 
+.index_container .page_list li {
+  padding: 0;
+}
+

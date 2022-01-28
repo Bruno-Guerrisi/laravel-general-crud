@@ -17,7 +17,8 @@
                         </a>
                     </li>
 
-                    <li class="me-4">
+                    <li class="me-4 
+                    @if (Request::route()->getName() == 'products.index') active @endif">
                         <a href="{{ route('products.index') }}">
                             Abbigliamento
                         </a>

@@ -4,8 +4,7 @@
 
     <div class="container mt-5 p-3 text-center index_container">
 
-        <h1>Bindex</h1>
-
+        <h1>Abbigliamento</h1>
 
         <div class="row">
 
@@ -47,5 +46,9 @@
 
         </div>
 
+
+        <div class="page_list">{{ $products->links() }}</div>
+        
     </div>
+    
 @endsection
