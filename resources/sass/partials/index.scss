@@ -112,6 +112,84 @@
 
     }
 
+    .view_other{
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        width: 40px;
+        height: 40px;
+        background-color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >a{
+            color: rgb(4, 4, 167);
+        }
+
+    }
+
+    .my_edit{
+        position: absolute;
+        bottom: 60px;
+        right: 0px;
+        width: 40px;
+        height: 40px;
+        background-color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >a{
+            color: rgb(0, 136, 0);
+        }
+
+    }
+
+    .my_destroy{
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        width: 40px;
+        height: 40px;
+        background-color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button.delete_button{
+            border: 0;
+            background-color: transparent;
+            color: red;
+
+            &:hover{
+
+                i{
+    
+                    animation: swing_delete 1s linear infinite;
+    
+                    @keyframes swing_delete {
+                        0%{
+                            transform: rotate(0deg);
+                        }
+                        25%{
+                            transform: rotate(10deg);
+                        }
+                        50%{
+                            transform: rotate(0deg);
+                        }
+                        75%{
+                            transform: rotate(-10deg);
+                        }
+                        100%{
+                            transform: rotate(0deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .page_list{
         
         li{
@@ -122,5 +200,17 @@
     a{
         color: currentColor;
         text-decoration: none;
+    }
+
+    .imagesection:hover{
+
+        .my_destroy, .my_edit{
+            opacity: 1;
+            transition: all 0.5s;
+        }
+    }
+
+    .my_destroy, .my_edit{
+        opacity: 0;
     }
 }

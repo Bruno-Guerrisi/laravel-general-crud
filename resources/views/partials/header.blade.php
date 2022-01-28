@@ -24,8 +24,9 @@
                         </a>
                     </li>
 
-                    <li class="me-4">
-                        <a href="#">
+                    <li class="me-4 
+                    @if (Request::route()->getName() == 'products.create') active @endif">
+                        <a href="{{ route('products.create') }}">
                             Aggiungere elementi
                         </a>
                     </li>

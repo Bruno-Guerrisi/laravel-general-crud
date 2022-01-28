@@ -1,3 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body main {
+  flex-grow: 1;
+}
+
 header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -186,6 +196,105 @@ header .other_site li a {
   }
 }
 
+.index_container .view_other {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index_container .view_other > a {
+  color: #0404a7;
+}
+
+.index_container .my_edit {
+  position: absolute;
+  bottom: 60px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index_container .my_edit > a {
+  color: #008800;
+}
+
+.index_container .my_destroy {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index_container .my_destroy button.delete_button {
+  border: 0;
+  background-color: transparent;
+  color: red;
+}
+
+.index_container .my_destroy button.delete_button:hover i {
+  -webkit-animation: swing_delete 1s linear infinite;
+          animation: swing_delete 1s linear infinite;
+}
+
+@-webkit-keyframes swing_delete {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes swing_delete {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .index_container .page_list li {
   padding: 0;
 }
@@ -193,6 +302,17 @@ header .other_site li a {
 .index_container a {
   color: currentColor;
   text-decoration: none;
+}
+
+.index_container .imagesection:hover .my_destroy,
+.index_container .imagesection:hover .my_edit {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.index_container .my_destroy,
+.index_container .my_edit {
+  opacity: 0;
 }
 
 .container_show .image_section {
