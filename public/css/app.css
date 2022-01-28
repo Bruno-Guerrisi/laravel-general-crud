@@ -1,0 +1,188 @@
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header .cursor-pointer {
+  cursor: pointer;
+}
+
+header .container {
+  max-width: 1230px;
+}
+
+header .container-1 {
+  z-index: 2;
+  position: relative;
+  background-color: white;
+}
+
+header .other_site {
+  margin-bottom: 0;
+  height: 100%;
+}
+
+header .other_site li {
+  height: 100%;
+  cursor: pointer;
+}
+
+header .other_site li:hover,
+header .other_site li.active {
+  border-bottom: 2px solid #161677;
+}
+
+header .other_site li:hover a,
+header .other_site li.active a {
+  color: #161677;
+}
+
+header .other_site li a {
+  color: black;
+  text-decoration: none;
+}
+
+.index_container .image-one {
+  display: block;
+}
+
+.index_container .image-two {
+  display: none;
+}
+
+.index_container .imagesection {
+  cursor: pointer;
+  position: relative;
+}
+
+.index_container .imagesection:hover .image-one {
+  display: none;
+}
+
+.index_container .imagesection:hover .image-two {
+  display: block;
+}
+
+.index_container ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.index_container ul li {
+  padding: 20px;
+}
+
+.index_container .info-list {
+  margin-top: 10px;
+}
+
+.index_container .info-list .brand {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.index_container .info-list .description {
+  font-size: 16px;
+}
+
+.index_container .info-list .price {
+  display: block;
+  color: red;
+  font-weight: bold;
+}
+
+.index_container .info-list .plus {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.index_container .info-list .plus .plus-text {
+  color: #eec200;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 3px;
+}
+
+.index_container .dream-heart {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index_container .dream-heart i {
+  font-size: 24px;
+  display: block;
+}
+
+.index_container .dream-heart:hover i {
+  -webkit-animation: swing 1s linear infinite;
+          animation: swing 1s linear infinite;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    transform: rotate(0deg);
+    color: red;
+  }
+
+  25% {
+    transform: rotate(10deg);
+    color: #ff5e00;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    color: #ff9900;
+  }
+
+  75% {
+    transform: rotate(-10deg);
+    color: #ff5e00;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    color: red;
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+    color: red;
+  }
+
+  25% {
+    transform: rotate(10deg);
+    color: #ff5e00;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    color: #ff9900;
+  }
+
+  75% {
+    transform: rotate(-10deg);
+    color: #ff5e00;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    color: red;
+  }
+}
+

@@ -1,0 +1,49 @@
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    
+    
+    .cursor-pointer{
+        
+        cursor: pointer;
+    }
+    
+    .container {
+        max-width: 1230px;
+    }
+    .container-1 {
+        z-index: 2;
+        position: relative;
+        background-color: white;
+    }
+    
+    .other_site{
+        
+        margin-bottom: 0;
+        height: 100%;
+
+        li{
+            height: 100%;
+            cursor: pointer;
+            
+            &:hover,
+            &.active{
+                border-bottom: 2px solid rgb(22, 22, 119);
+                
+                a{
+                    color: rgb(22, 22, 119);
+                }
+            }
+            
+            a{
+                color: black;
+                text-decoration: none;
+                
+            }
+        }
+    }
+}

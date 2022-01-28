@@ -1,0 +1,114 @@
+
+.index_container{
+
+    .image-one{
+        display: block;
+    }
+    .image-two{
+        display: none;
+    }
+    .imagesection{
+        cursor: pointer;
+        position: relative;
+    }
+
+    .imagesection:hover{
+
+
+        .image-one{
+            display: none;
+        }
+        .image-two{
+            display: block;
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+
+        li{
+            padding: 20px;
+        }
+    }
+
+    .info-list{
+        margin-top: 10px;
+        .brand{
+            font-family: 'Roboto Slab', serif;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .description{
+            font-size: 16px;
+        }
+
+        .price{
+            display: block;
+            color: red;
+            font-weight: bold;
+        }
+
+        .plus{
+            .plus-text{
+                color: rgb(238, 194, 0);
+                font-style: italic;
+                font-weight: bold;
+                font-size: 20px;
+                margin-right: 3px;
+            }
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+
+    .dream-heart{
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        width: 40px;
+        height: 40px;
+        background-color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i{
+            font-size: 24px;
+            display: block;
+        }
+
+        &:hover{
+            i{
+
+                animation: swing 1s linear infinite;
+
+                @keyframes swing {
+                    0%{
+                        transform: rotate(0deg);
+                        color: red;
+                    }
+                    25%{
+                        transform: rotate(10deg);
+                        color: rgb(255, 94, 0);
+                    }
+                    50%{
+                        transform: rotate(0deg);
+                        color: rgb(255, 153, 0);
+                    }
+                    75%{
+                        transform: rotate(-10deg);
+                        color: rgb(255, 94, 0);
+                    }
+                    100%{
+                        transform: rotate(0deg);
+                        color: red;
+                    }
+                }
+            }
+        }
+
+    }
+}
