@@ -190,3 +190,40 @@ header .other_site li a {
   padding: 0;
 }
 
+.index_container a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.container_show .image_section {
+  display: flex;
+  justify-content: center;
+}
+
+.container_show .image_section .image_carousel {
+  max-width: 50%;
+}
+
+.container_show .info_section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.container_show .info_section .price {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container_show .my_form {
+  width: 50%;
+}
+
+.container_show .my_form .add_dream {
+  border-top: 1px solid #000;
+  background-color: white;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+

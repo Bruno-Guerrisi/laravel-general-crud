@@ -1,0 +1,36 @@
+.container_show{
+    .image_section{
+
+        display: flex;
+        justify-content: center;
+
+        .image_carousel{
+
+            max-width: 50%;
+        }
+    }
+
+    .info_section{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .price{
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+    }
+
+    .my_form{
+        width: 50%;
+
+        .add_dream{
+            border-top: 1px solid #000;
+            background-color: white;
+            padding: 0 10px;
+            border-radius: 5px;
+        }
+    }
+}

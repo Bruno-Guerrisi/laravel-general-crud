@@ -13,33 +13,34 @@
                 @foreach($products as $product)
                 <li class="col-sm-12 col-md-6 col-lg-4 mycard">
 
-                    <div class="imagesection">
+                    <a href="{{ route('products.show', $product->id) }}">
+                        <div class="imagesection">
 
-                        <img class="w-100 image-one"
-                            src="{{$product->posterOne}}" 
-                            alt="{{$product->description}}">
+                            <img class="w-100 image-one"
+                                src="{{$product->posterOne}}" 
+                                alt="{{$product->description}}">
 
-                        <img class="image-two w-100"
-                            src="{{$product->posterTwo}}" 
-                            alt="{{$product->description}}">
+                            <img class="image-two w-100"
+                                src="{{$product->posterTwo}}" 
+                                alt="{{$product->description}}">
 
-                        <span class="dream-heart">
-                            <i class="far fa-heart"></i>
-                        </span>
-                    </div>
+                            <span class="dream-heart">
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </div>
 
-                    <div class="info-list">
-                        <h3 class="brand">
-                            {{$product->brand}}
-                        </h3>
-                        <h4 class="description">
-                            {{$product->description}}
-                        </h4>
-                        <span class="price">
-                            {{$product->price}} €
-                        </span>
-                    </div>
-
+                        <div class="info-list">
+                            <h3 class="brand">
+                                {{$product->brand}}
+                            </h3>
+                            <h4 class="description">
+                                {{$product->description}}
+                            </h4>
+                            <span class="price">
+                                {{$product->price}} €
+                            </span>
+                        </div>
+                    </a>
                 </li>
                 @endforeach
             </ul>
